@@ -4,6 +4,7 @@ import jakarta.validation.Valid;
 import org.example.authorization.Authorities;
 import org.example.authorization.User;
 import org.example.authorization.service.AuthorizationService;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

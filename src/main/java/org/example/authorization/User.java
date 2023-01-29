@@ -1,7 +1,16 @@
 package org.example.authorization;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class User {
+    @NotBlank
     String user;
+    @NotBlank
+    @Size(min = 4, max=15)
     String password;
 
     public User(String user, String password) {
